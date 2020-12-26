@@ -1,10 +1,7 @@
-// React Native Bottom Navigation
-// https://aboutreact.com/react-native-bottom-navigation/
-
 import * as React from "react";
 import { View, Text, SafeAreaView } from "react-native";
 
-const DetailsScreen = () => {
+const JobListingDetail = ({}) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={{ flex: 1, padding: 16 }}>
@@ -25,14 +22,8 @@ const DetailsScreen = () => {
             You are on Details Screen
           </Text>
         </View>
-        <Text style={{ fontSize: 18, textAlign: "center", color: "grey" }}>
-          React Native Bottom Navigation
-        </Text>
-        <Text style={{ fontSize: 16, textAlign: "center", color: "grey" }}>
-          www.aboutreact.com
-        </Text>
       </View>
     </SafeAreaView>
   );
 };
-export default DetailsScreen;
+export default JobListingDetail;

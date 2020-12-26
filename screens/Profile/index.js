@@ -1,6 +1,3 @@
-// React Native Bottom Navigation
-// https://aboutreact.com/react-native-bottom-navigation/
-
 import * as React from "react";
 import {
   TouchableOpacity,
@@ -8,18 +5,19 @@ import {
   View,
   Text,
   SafeAreaView,
-} from "react-native";
+  Button,
+} from "react-native"; 
 
-const HomeScreen = ({ navigation }) => {
+const Profile = ({ navigation }) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={{ flex: 1, padding: 16 }}>
         <View
           style={{
             flex: 1,
-            alignItems: "center",
             justifyContent: "center",
-          }}
+            alignItems: "center",
+          }} 
         >
           <Text
             style={{
@@ -28,29 +26,21 @@ const HomeScreen = ({ navigation }) => {
               marginBottom: 16,
             }}
           >
-            You are on Home Screen
+            You are viewing your user details
           </Text>
           <TouchableOpacity
             style={styles.button}
-            onPress={() =>
-              navigation.navigate("SettingsStack", { screen: "Settings" })
-            }
+            onPress={() => navigation.navigate("updateProfile")}
           >
-            <Text>Go to settng Tab</Text>
+            <Text>Update Profile Screen</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate("Details")}
+            onPress={() => navigation.navigate("jobDetail")}
           >
-            <Text>Open Details Screen</Text>
+            <Text>Open Job Details Screen</Text>
           </TouchableOpacity>
         </View>
-        <Text style={{ fontSize: 18, textAlign: "center", color: "grey" }}>
-          React Native Bottom Navigation
-        </Text>
-        <Text style={{ fontSize: 16, textAlign: "center", color: "grey" }}>
-          www.aboutreact.com
-        </Text>
       </View>
     </SafeAreaView>
   );
@@ -65,4 +55,4 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
 });
-export default HomeScreen;
+export default Profile;

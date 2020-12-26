@@ -1,10 +1,7 @@
-// React Native Bottom Navigation
-// https://aboutreact.com/react-native-bottom-navigation/
-
 import * as React from "react";
-import { View, Text, SafeAreaView } from "react-native";
+import { View, Text, SafeAreaView,Button } from "react-native";
 
-const ProfileScreen = () => {
+const UpdateProfile = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={{ flex: 1, padding: 16 }}>
@@ -22,17 +19,14 @@ const ProfileScreen = () => {
               marginBottom: 16,
             }}
           >
-            You are on Profile Screen
+            Update Your User Info
           </Text>
         </View>
         <Text style={{ fontSize: 18, textAlign: "center", color: "grey" }}>
-          React Native Bottom Navigation
-        </Text>
-        <Text style={{ fontSize: 16, textAlign: "center", color: "grey" }}>
-          www.aboutreact.com
+          Update
         </Text>
       </View>
     </SafeAreaView>
   );
 };
-export default ProfileScreen;
+export default UpdateProfile;
