@@ -55,7 +55,7 @@ export class App extends Component {
     }
 
    // if (!loggedIn) {//commented for now
-      if (loggedIn) {
+      if (!loggedIn) {
         return <AuthStackScreen />;
       }
 
